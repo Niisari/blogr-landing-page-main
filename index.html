@@ -12,16 +12,13 @@
 
 <body>
 
-  <main>
+  <main class="main__container">
 
     <header class="header">
-
       <nav class="nav">
-        <svg class="nav__logo">
-          <use 
-          href="./src/assets/images/logo.svg">
-          </use>
-        </svg>
+        <div class="nav__logo">
+          <img src="./src/assets/images/logo.svg" alt="logo">
+        </div>
 
         <div class="sub__nav">
           <button class="dropdown__btn">Product</button>
@@ -68,61 +65,109 @@
           <button class="btn__learn">Learn More</button>
         </div>
       </div>
-
     </header>
 
-    <section>
-  Designed for the future
+    <!-- Section One -->
+    <section class="features__section">
+      <h2 class="features__title">Designed for the future</h2>
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
+      <div class="features__content--container">
+        <div class="features__text--content">
+          <h3 class="features__subtitle">Introducing an extensible editor</h3>
+          <p class="features__text">
+            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+            change the looks of a blog.
+          </p>
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+          <h3 class="features__subtitle">Robust content management</h3>
+          <p class="features__text">
+            Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+          </p>
+        </div>
+
+        <picture class="features__img--content">
+          <source media="(min-width: 992px)" srcset="./src/assets/images/illustration-editor-desktop.svg">
+          <img src="./src/assets/images/illustration-editor-mobile.svg" alt="illustration-editor">
+        </picture>
+    </div>
+
   </section>
 
-  <section>
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+  <!-- Section Two -->
+  <section class="infrastructure__section">
+    <div class="infrastructure__text--content">
+      <h2 class="infrastructure__title">State of the Art Infrastructure</h2>
+      <p class="infrastructure__text">
+        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+      </p>
+    </div>
+
+    <div class="infrastructure__img--content">
+      <img 
+      src="./src/assets/images/illustration-phones.svg" 
+      alt="">
+    </div>
   </section>
 
-  <section>
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+  <!-- Section Three -->
+  <section class="tooling__section">
+    <div class="tooling__text--content">
+      <h3 class="tooling__subtitle">Free, open, simple</h3>
+      <p class="tooling__text">
+      Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+      features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+      and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+      </p>
 
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
+      <h3 class="tooling__subtitle">Powerful tooling</h3>
+      <p class="tooling__text">
+      Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+      capable of producing even the most complicated sites.
+      </p>
+    </div>
+
+    <picture class="tooling__img--content">
+      <source media="(min-width: 992px)" srcset="./src/assets/images/illustration-laptop-desktop.svg">
+      <img src="./src/assets/images/illustration-laptop-mobile.svg" alt="illustration-laptop">
+    </picture>
   </section>
 
-  <footer>
-  Product
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__logo">
+      <img src="./src/assets/images/logo.svg" alt="logo">
+    </div>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+    <div class="footer__links">
+      <h4 class="footer__subtitle">Product</h4>
 
-  Company
+      <a href="">Overview</a>
+      <a href="">Pricing</a>
+      <a href="">Marketplace</a>
+      <a href="">Features</a>
+      <a href="">Integrations</a>
+    </div>
 
-  About
-  Team
-  Blog
-  Careers
+    <div class="footer__links">
+      <h4 class="footer__subtitle">Company</h4>
 
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
+      <a href="">About</a>
+      <a href="">Team</a>
+      <a href="">Blog</a>
+      <a href="">Careers</a>
+    </div>
+
+    <div class="footer__links">
+      <h4 class="footer__subtitle">Connect</h4>
+      
+      <a href="">Contact</a>
+      <a href="">Newsletter</a>
+      <a href="">LinkedIn</a>
+  </div>
   </footer>
 
   </main>
