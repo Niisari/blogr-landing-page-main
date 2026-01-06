@@ -71,8 +71,7 @@
 
 /* General Typography */
 body {
-    background-color: orangered;
-    
+    font-family: 'Overpass', sans-serif;  
 }
 
 button {
@@ -89,7 +88,66 @@ a {
     text-decoration: none;
 }
 
-.dropdown {
+.header {
+  position: relative;
+  min-height: 90vh;
+  padding: 3.5rem 1.5rem;
+ 
+
+  background:
+    url("../assets/images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(
+      135deg,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+  color: var(--white);
+  background-repeat: no-repeat;
+  background-position: 25% 20%;
+  background-size: 200%;
+  border-radius: 0 0 0 6rem;
+  overflow: hidden;
+}
+
+.sub__nav {
     display: none;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin: 6rem 0;
+    gap: 1rem;
+
+    .header__text {
+      margin-bottom: 1.5rem;
+  }
+}
+
+.header__buttons {
+    display: flex;
+    gap: 1rem;
+
+    .btn__start {
+        background: var(--white);
+        color: var(--red-500);
+    }
+
+    .btn__learn {
+        border: 2px solid var(--white);
+        background: transparent;
+        color: var(--white);
+    }
+
+    .btn__learn,
+    .btn__start {
+      padding: 1rem 1.25rem;
+      border-radius: 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+    }
 }
 
