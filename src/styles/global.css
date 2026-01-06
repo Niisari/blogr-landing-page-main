@@ -16,4 +16,11 @@ button {
     background-color: transparent;
 }
 
+img {
+    max-width: 100%;
+}
+
+.dropdown {
+    display: none;
+}
 
