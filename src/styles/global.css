@@ -1,3 +1,24 @@
+/* Custom Properties */
+:root {
+/*-----Primary------*/
+--red-500: hsl(356, 100%, 66%);
+--red-400: hsl(355, 100%, 74%);
+--blue-900: hsl(208, 49%, 24%);
+
+/*-----Neutral------*/
+--white: hsl(0, 100%, 100%);
+--gray-600: hsl(207, 13%, 34%);
+--gray-900: hsl(240, 10%, 16%);
+
+/*-----Gradient------*/
+/* Background gradient - intro/CTA mobile nav: */
+--orange-300: hsl(13, 100%, 72%);
+--red-550: hsl(353, 100%, 62%);
+/* Background gradient - body: */
+--purple-950: hsl(237, 17%, 21%);
+--purple-900: hsl(237, 23%, 31%);
+}
+
 /* Header Section */
 .header {
   min-height: 90vh;
@@ -142,6 +163,7 @@
     gap: 1rem;
 
     .header__text {
+      color: var(--white);
       margin-bottom: 1.5rem;
   }
 }
@@ -171,6 +193,120 @@
     }
 }
 
+/* Features Section */
+.features__title {
+    color: var(--blue-900);
+    text-align: center;
+    margin: 6rem 0 2rem 0;
+}
+
+.features__content--container {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.features__img--content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features__text--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1rem;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+
+  .features__subtitle {
+    color: var(--blue-900);
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+/* Infrastructure Section */
+.infrastructure__section {
+    overflow: hidden;
+}
+
+.infrastructure__img--content {
+    position: relative;
+}
+
+.infrastructure__img--content::before {
+    content: url("../assets/images/bg-pattern-circles.svg");
+    position: absolute;
+    top: -20%;
+    left: -90%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.tooling__section {
+    margin: 4rem 0;
+}
+
+.tooling__img--content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooling__text--content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 1rem;
+    padding: 0 2rem;
+
+  .tooling__subtitle {
+    color: var(--blue-900);
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--gray-900);
+    color: var(--white);
+
+    border-radius: 0 4rem 0 0;
+    padding: 4rem 0;
+    text-align: center;
+
+    .footer__logo {
+      margin-bottom: 3rem;
+    }
+
+    .footer__links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    .footer__subtitle {
+      margin: 1.5rem 0 1.5rem 0;
+    }
+
+    a {
+      color: var(--gray-600);
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+}
+
+
+
+
+
 /* Mobile Menu Classes */
 
 /* Mobile menu */
@@ -198,4 +334,9 @@
 
 .close__btn.active {
     display: block;
+}
+
+/* Utility Classes */
+.margin__bottom-sm {
+    margin-bottom: 1rem;
 }
