@@ -89,28 +89,131 @@ a {
 }
 
 .header {
-  position: relative;
   min-height: 90vh;
   padding: 3.5rem 1.5rem;
- 
+  position: relative;
 
   background:
     url("../assets/images/bg-pattern-intro-mobile.svg"),
     linear-gradient(
-      135deg,
+      
       hsl(13, 100%, 72%),
       hsl(353, 100%, 62%)
     );
   color: var(--white);
   background-repeat: no-repeat;
-  background-position: 25% 20%;
-  background-size: 200%;
-  border-radius: 0 0 0 6rem;
-  overflow: hidden;
+  background-position: 34% 34%;
+  background-size: 330%;
+
+  border-bottom-left-radius: 80px;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__menu {
+  background-color: var(--white);
+  color: var(--gray-900);
+
+  position: absolute;
+  top: 12vh;
+  width: 100%;
+
+  padding: 0 1.5rem;
+  border-radius: 0.30rem;
+  z-index: 2;
+
+  .nav__secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem 0;
+    gap: 1rem;
+
+    .login__btn {
+      color: var(--gray-600);
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .signup__btn {
+      background: linear-gradient(
+        90deg,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+      );
+      color: var(--white);
+
+      width: 50%;
+      padding: 1rem 1.25rem;
+      border-radius: 2rem;
+
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+  }
+
 }
 
 .sub__nav {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 2rem 0;
+    gap: 1rem;
+    
+    .dropdown__btn {
+      color: var(--gray-600);
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .dropdown.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      background-color: #efeff1;
+      border-radius: 0.30rem;
+
+      padding: 1.5rem 0;
+      margin-top: 0.5rem;
+      width: 100%;
+      gap: 1rem;
+
+      a {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: var(--gray-600);
+      }
+
+    }
+}
+
+.dropdown__btn::after {
+    content: url("../assets/images/icon-arrow-dark.svg");
+    margin-left: 0.5rem;
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--gray-600);
+    opacity: 0.3;
 }
 
 .header__content {
@@ -151,3 +254,31 @@ a {
     }
 }
 
+/* Mobile Menu Classes */
+
+/* Mobile menu */
+.nav__menu {
+    display: none;
+}
+
+.nav__menu.active {
+    display: block;
+}
+
+/* Dropdowns */
+.dropdown {
+    display: none;
+}
+
+/* Buttons */
+.hamburger.hidden {
+    display: none;
+}
+
+.close__btn {
+    display: none;
+}
+
+.close__btn.active {
+    display: block;
+}
