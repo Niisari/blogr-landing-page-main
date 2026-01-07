@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* overpass-300 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/overpass-v19-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* overpass-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/overpass-v19-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ubuntu-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/ubuntu-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ubuntu-500 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/ubuntu-v21-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ubuntu-700 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/ubuntu-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Custom Properties */
+:root {
+/*-----Primary------*/
+--red-500: hsl(356, 100%, 66%);
+--red-400: hsl(355, 100%, 74%);
+--blue-900: hsl(208, 49%, 24%);
+
+/*-----Neutral------*/
+--white: hsl(0, 100%, 100%);
+--gray-600: hsl(207, 13%, 34%);
+--gray-900: hsl(240, 10%, 16%);
+
+/*-----Gradient------*/
+/* Background gradient - intro/CTA mobile nav: */
+--orange-300: hsl(13, 100%, 72%);
+--red-550: hsl(353, 100%, 62%);
+/* Background gradient - body: */
+--purple-950: hsl(237, 17%, 21%);
+--purple-900: hsl(237, 23%, 31%);
+}
+
+/* General Typography */
+body {
+    font-family: 'Overpass', sans-serif;  
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
