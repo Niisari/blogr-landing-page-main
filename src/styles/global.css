@@ -230,11 +230,13 @@
 /* Infrastructure Section */
 .infrastructure__section {
     position: relative;
-    padding: 12rem 0 4rem 0;
+    padding: 12rem 0 6rem 0;
 
     border-top-right-radius: 5rem;
     border-bottom-left-radius: 5rem;
-    background-color: var(--purple-950);
+    background: url(../assets/images/bg-pattern-circles.svg) no-repeat var(--purple-950);
+    background-size: 94vh;
+    background-position: center -38vh;
 
     .infrastructure__text--content {
         display: flex;
@@ -242,8 +244,8 @@
         align-items: center;
         text-align: center;
 
-        gap: 1rem;
-        margin: 3rem 0;
+        margin-top: 2rem;
+        gap: 1.5rem;
         padding: 0 2rem;
 
         .infrastructure__title {
