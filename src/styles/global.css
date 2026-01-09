@@ -440,4 +440,26 @@
     display: none;
   }
 
+  .features__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "title title"
+      "content img";
+
+    padding-left: 8rem;
+
+    .features__title {
+      grid-area: title;
+    }
+
+    .features__img--content {
+      grid-area: img;
+    }
+
+    .features__text--content {
+      grid-area: content;
+    }
+  }
+
 }
