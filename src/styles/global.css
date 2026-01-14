@@ -486,35 +486,36 @@
 }
 
   .infrastructure__section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
 
     background-position: -15vh -35vh;
     background-size: 100vh;
 
     padding: 7rem 0;
-    gap: 1rem;
+    gap: 2rem;
 
     .infrastructure__img--content {
       position: relative;
-      transform: translateY(30vh);
-      left: 4vw;
+      flex: 1;
 
       .infrastructure__img {
+        max-width: 30rem;
         width: 100%;
-        max-width: 75%;
+
+        transform: translateX(20%);
       }
     }
 
     .infrastructure__text--content {
+      flex: 1;
       align-items: flex-start;
       text-align: start;
-
-      padding: 0 8rem 0 0;
-      margin: 0;
+      padding: 0;
+      margin: auto;
 
       .infrastructure__text {
-        
+        width: 70%;
       }
     }
   }
