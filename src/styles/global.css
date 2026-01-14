@@ -489,8 +489,8 @@
     display: flex;
     flex-direction: row;
 
-    background-position: -15vh -35vh;
-    background-size: 100vh;
+    background-position: -25vw 85%;
+    background-size: cover;
 
     padding: 7rem 0;
     gap: 2rem;
@@ -512,8 +512,7 @@
       align-items: flex-start;
       text-align: start;
       padding: 0;
-      margin: auto;
-
+    
       .infrastructure__text {
         width: 70%;
       }
@@ -523,20 +522,26 @@
   .tooling__section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+
+    transform: translateX(-14rem);
 
     .tooling__text--content {
       align-items: flex-start;
       text-align: start;
+
+      width: 70%;
+
+      .tooling__text.margin__bottom-sm {
+        margin-bottom: 3rem;
+      }
     }
 
     .tooling__img--content {
       position: relative;
-      right: 4vw;
 
       .tooling__img {
-        
+        max-width: 50rem;
       }
     }
   }
