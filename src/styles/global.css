@@ -489,10 +489,10 @@
     display: flex;
     flex-direction: row;
 
-    background-position: -25vw 85%;
-    background-size: cover;
+    background-position: -14vw 85%;
+    background-size: 65vw;
 
-    padding: 7rem 0;
+    padding: 6rem 0;
     gap: 2rem;
 
     .infrastructure__img--content {
@@ -501,16 +501,15 @@
 
       .infrastructure__img {
         max-width: 30rem;
-        width: 100%;
-
-        transform: translateX(20%);
+        transform: translateX(-10%);
+        right: 1rem;
       }
     }
 
     .infrastructure__text--content {
-      flex: 1;
       align-items: flex-start;
       text-align: start;
+      flex: 1;
       padding: 0;
     
       .infrastructure__text {
