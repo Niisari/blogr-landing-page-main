@@ -52,6 +52,7 @@
 html, body {
   overflow-x: hidden;
   max-width: 100%;
+  min-height: 100vh;
 }
 
 body {
@@ -64,8 +65,9 @@ button {
     background-color: transparent;
 }
 
-img {
+img, picture, video {
     max-width: 100%;
+    display: block;
 }
 
 a {
