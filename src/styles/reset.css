@@ -49,6 +49,10 @@
 }
 
 /* General Typography */
+html, body {
+  overflow-x: hidden;
+}
+
 body {
     font-family: 'Overpass', sans-serif;  
 }

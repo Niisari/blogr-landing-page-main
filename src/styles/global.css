@@ -19,10 +19,6 @@
 --purple-900: hsl(237, 23%, 31%);
 }
 
-.main__container { 
-  overflow: hidden;
-}
-
 /* Header Section */
 .header {
   min-height: 90vh;
