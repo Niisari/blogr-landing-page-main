@@ -363,7 +363,6 @@
 
     a:hover {
       text-decoration: underline;
-
     }
   }
 
@@ -494,12 +493,14 @@
   }
 
     .features__section {
-    margin: 10rem 0;
+    margin: 4rem 0;
   }
 
   .features__title {
     font-size: 2.5rem;
     margin: 0;
+
+    transform: translateY(10vh);
   }
 
   .features__content--container {
